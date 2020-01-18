@@ -1,7 +1,30 @@
-.contact-card {
-    margin: 2em 2em 4em 0em;
+.contact-section {
+    margin: 0em 2em 4em 0em;
+    .row {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        .contact-field {
+            padding:1.0em;
+            display:flex;
+            max-width: fit-content;
+            .icon {
+                margin: auto;
+                padding: 1em 1em 1em 0em;
+            }
+            .data {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                .contact-field-title {
+                    font-weight:600;
+                }
+            }
+
+        }
+    }
 }
 
 .card {
-    height: 250px;
+    height: 200px;
 }
