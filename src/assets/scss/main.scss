@@ -1,0 +1,27 @@
+@import './layout.css';
+@import './contact-card';
+@import './application-card';
+@import './employee-dt';
+
+.main {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0px 1.0875rem 1.45rem;
+    padding-top: 0px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        flex-direction: column;
+    }
+}
+
+.col-1 {
+    flex: 60%;
+}
+
+.col-2 {
+    flex: 30%
+}

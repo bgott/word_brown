@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.wordandbrown.com">
-    <img alt="W&B" src="https://www.wordandbrown.com/wp-content/themes/2015blue/img/WB.2019.Logo.PMS.Full.jpg" width="60" />
+    <img alt="W&B" src="https://www.wordandbrown.com/wp-content/themes/2015blue/img/WB.2019.Logo.PMS.Full.jpg" style="max-width: 70%;" />
   </a>
 </p>
 <h1 align="center">
