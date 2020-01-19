@@ -1,16 +1,18 @@
 .contact-section {
     margin: 0em 2em 4em 0em;
     .row {
-        padding: 1em;
+        padding: 1em 0em;
         display: flex;
         flex-direction: row;
+        .MuiDivider-vertical {
+            width: 2px;
+            height: 65%;
+        }
         .contact-field {
-            padding:1.0em;
             display:flex;
-            max-width: fit-content;
             .icon {
                 margin: auto;
-                padding: 1em 1em 1em 0em;
+                padding: 1em 0.5em 1em 0em;
             }
             .data {
                 margin: auto;
@@ -22,9 +24,20 @@
             }
 
         }
+        .tax-section {
+            display: flex;
+            flex-direction: row;
+            .tax-id-title {
+                font-weight: 600;
+                padding-left:20px;
+            }
+            .tax-id-data {
+
+            }
+        }
     }
 }
 
 .card {
-    height: 200px;
+    //height: 200px;
 }
