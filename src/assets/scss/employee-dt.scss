@@ -1,6 +1,25 @@
 .employee-section {
     margin: 0em 2em 4em 0em;
-    .card {
-        height: 550px;
+    .MuiTableCell-head {
+        background-color: rebeccapurple;
+        color: white;
+        text-transform: uppercase;
+    }
+    .MuiFormControl-root {
+        width:80%;
+    }
+
+    .MuiInputBase-root {
+        font-size: 95%;
+        // width: 200px;
+        .MuiOutlinedInput-input {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .type-select {
+        //padding-top:15px;
+        //padding-bottom:15px;
     }
 }

@@ -417,7 +417,7 @@ table {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /*margin-bottom: 1.45rem;*/
   font-size: 1rem;
   line-height: 1.45rem;
   border-collapse: collapse;
@@ -580,14 +580,14 @@ th {
   padding-top: 0.725rem;
   padding-bottom: calc(0.725rem - 1px);
 }
-th:first-child,
+/* th:first-child,
 td:first-child {
   padding-left: 0;
 }
 th:last-child,
 td:last-child {
   padding-right: 0;
-}
+} */
 tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
