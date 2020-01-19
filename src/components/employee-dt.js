@@ -9,8 +9,15 @@ import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
+import TextField from '@material-ui/core/TextField';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import SearchIcon from '@material-ui/icons/Search';
+import IconButton from '@material-ui/core/IconButton';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Button from '@material-ui/core/Button';
+import AddIcon from '@material-ui/icons/Add';
+import FilterListIcon from '@material-ui/icons/FilterList';
 
 function createData(name, ssn, status, type) {
   return { name, ssn, status, type };
@@ -29,9 +36,33 @@ const rows = [
   createData('Richard Hendricks', 'XXXX–XX–1234', 'Completed', 'Online'),
 ];
 
+const search_text = "Employee's first name, last name or SSN";
+const search_input_props = {
+    endAdornment: (
+        <InputAdornment position="start">
+            <SearchIcon />
+        </InputAdornment>
+    ),
+};
+
 const EmployeeDatatable = () => (
+
     <>
+
         <div className="employee-section">
+            <div className="table-data-control">
+                <form className="search" noValidate autoComplete="off">
+                    <TextField className="search-input" label={search_text} variant="outlined" InputProps={search_input_props}/>
+                </form>
+                <ButtonGroup size="medium">
+                    <Button>
+                        <AddIcon />
+                    </Button>
+                    <Button>
+                        <FilterListIcon />
+                    </Button>
+                </ButtonGroup>
+            </div>
             <TableContainer component={Paper}>
                 <Table className="table" aria-label="simple table">
                     <TableHead>

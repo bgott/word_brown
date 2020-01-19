@@ -5,21 +5,50 @@
         color: white;
         text-transform: uppercase;
     }
-    .MuiFormControl-root {
-        width:80%;
-    }
+    .table {
+        .MuiFormControl-root {
+            width:90%;
+        }
 
-    .MuiInputBase-root {
-        font-size: 95%;
-        // width: 200px;
-        .MuiOutlinedInput-input {
-            padding-top: 15px;
-            padding-bottom: 15px;
+        .MuiInputBase-root {
+            font-size: 95%;
+            // width: 200px;
+            .MuiOutlinedInput-input {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
         }
     }
+    .table-data-control {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom :1.2em;
+        .search {
+            width: 60%;
+        }
+        .MuiFormLabel-root, .MuiInputLabel-root, .MuiInputLabel-formControl, .MuiInputLabel-animated, .MuiInputLabel-outlined {
+            margin-left:35px;
+        }
+        .MuiInputLabel-shrink, .Mui-Focused {
+            margin-left:0px !important;
+        }
+        .MuiOutlinedInput-input {
+            padding: 18.5px 10px;
+        }
 
-    .type-select {
-        //padding-top:15px;
-        //padding-bottom:15px;
+        .MuiFormControl-root {
+            width:100%;
+        }
+        .MuiInputBase-root,.MuiOutlinedInput-root, .MuiInputBase-formControl, .MuiInputBase-adornedEnd ,.MuiOutlinedInput-adornedEnd {
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+        .MuiInputAdornment-root, .MuiInputAdornment-positionStart {
+            margin-left: 12px;
+            margin-top: 5px;
+        }
+        .MuiInputBase-root {
+            font-size: 95%;
+        }
     }
 }
