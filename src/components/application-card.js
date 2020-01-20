@@ -9,6 +9,11 @@ import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Divider from '@material-ui/core/Divider';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import CheckIcon from '@material-ui/icons/Check';
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import PropTypes from 'prop-types';
 
 const steps_status = ["BRP Status", "BR Status", "ERP Status", "ER Status", "UWP Status", "UW Status"];
 const steps_dates = ["10/28/2019", "11/10/2019", "11/12/2019", "IN PROGRESS", "", ""]
@@ -18,6 +23,70 @@ const step_data = ["Broker application has been completed and Employer registrat
 "Master Application complete. Employee enrolling",
 "Master Application and Employee Application finalized for submission to Underwriting",
 "Master Application and Employee Application finalized"];
+
+const useColorlibStepIconStyles = makeStyles({
+  root: {
+    backgroundColor: 'white',
+    zIndex: 1,
+    color: 'rebeccapurple',
+    width: 28,
+    height: 28,
+    display: 'flex',
+    borderRadius: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  active: {
+    backgroundColor: 'rebeccapurple',
+    color: 'white',
+    fontSize:'18px',
+    fontWeight:'500',
+    fontFamily:'Roboto',
+    width:40,
+    height:40,
+    marginLeft:-5,
+    marginRight:-5,
+  },
+  completed: {
+      backgroundColor: 'rebeccapurple',
+      color: 'white',
+      width:28,
+      height:28,
+      marginLeft:0,
+      marginRight:0,
+  },
+});
+
+function ColorlibStepIcon(props) {
+  const classes = useColorlibStepIconStyles();
+  const { active, completed } = props;
+
+  const icons = {
+    1: <CheckIcon fontSize="small"/>,
+    2: <CheckIcon fontSize="small"/>,
+    3: <CheckIcon fontSize="small"/>,
+    4: "ER",
+    5: <RadioButtonUncheckedIcon />,
+    6: <RadioButtonUncheckedIcon />,
+  };
+
+  return (
+    <div
+      className={clsx(classes.root, {
+        [classes.active]: active,
+        [classes.completed]: completed,
+      })}
+    >
+      {icons[String(props.icon)]}
+    </div>
+  );
+}
+
+ColorlibStepIcon.propTypes = {
+  active: PropTypes.bool,
+  completed: PropTypes.bool,
+  icon: PropTypes.node,
+};
 
 const ApplicationCard = () => (
     <>
@@ -56,8 +125,8 @@ const ApplicationCard = () => (
                         </div>
                         <div className="stepper-data">
                             <Stepper orientation="vertical" connector={false}>
-                                <Step active>
-                                    <StepLabel>
+                                <Step completed>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[0]}</div>
                                             <div className="step-date">{steps_dates[0]}</div>
@@ -66,8 +135,8 @@ const ApplicationCard = () => (
                                         <Divider className="step-divider"/>
                                     </StepLabel>
                                 </Step>
-                                <Step active>
-                                    <StepLabel>
+                                <Step completed>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[1]}</div>
                                             <div className="step-date">{steps_dates[1]}</div>
@@ -76,8 +145,8 @@ const ApplicationCard = () => (
                                         <Divider className="step-divider"/>
                                     </StepLabel>
                                 </Step>
-                                <Step active>
-                                    <StepLabel>
+                                <Step completed>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[2]}</div>
                                             <div className="step-date">{steps_dates[2]}</div>
@@ -87,7 +156,7 @@ const ApplicationCard = () => (
                                     </StepLabel>
                                 </Step>
                                 <Step active>
-                                    <StepLabel>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[3]}</div>
                                             <div className="step-date">{steps_dates[3]}</div>
@@ -96,8 +165,8 @@ const ApplicationCard = () => (
                                         <Divider className="step-divider"/>
                                     </StepLabel>
                                 </Step>
-                                <Step active>
-                                    <StepLabel>
+                                <Step>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[4]}</div>
                                             <div className="step-date">{steps_dates[4]}</div>
@@ -106,8 +175,8 @@ const ApplicationCard = () => (
                                         <Divider className="step-divider"/>
                                     </StepLabel>
                                 </Step>
-                                <Step active>
-                                    <StepLabel>
+                                <Step>
+                                    <StepLabel StepIconComponent={ColorlibStepIcon}>
                                         <div className="step-label">
                                             <div className="step-status">{steps_status[5]}</div>
                                             <div className="step-date">{steps_dates[5]}</div>

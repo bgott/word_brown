@@ -92,7 +92,6 @@
                     width: 4px;
                     margin-left: 2.2em;
                     height: calc(95% * (0.166) * 3 + 1em);
-
                     background-color: rebeccapurple;
                 }
                 .progress-stepper-light {
@@ -119,6 +118,7 @@
             .step-content {
                 margin-left: 1.5em;
                 font-weight:400;
+                color: black;
             }
             .step-divider {
                 margin-left: 1.5em;
