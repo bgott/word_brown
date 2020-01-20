@@ -12,18 +12,16 @@ This webpage was built to satisfy the coding challenge phase of my interview pro
 
 ## Challenge Description
 
-    **Code this webpage**
+<strong>Code the following webpage. We aren't expecting any interactivity. You may apply a color palette of your choice.</strong>
 
-    We aren't expecting any interactivity. You may apply a color palette of your choice.
-
-    <img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
+<img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
 
 
 ## Notes
 
-    **Here's where my notes will go**
+Here's where my notes will go
 
-    Here's an example note.
+Here's an example note.
 
 
 ## 💫 Deploy
