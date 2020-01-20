@@ -1,7 +1,7 @@
 {
-  "name": "W&B Coding Challenge",
+  "name": "W and B Coding Challenge",
   "private": true,
-  "description": "My submission for the coding challenge phase of my interview with Word & Brown",
+  "description": "My submission for the coding challenge phase of my interview with Word and Brown",
   "version": "0.1.0",
   "author": "Brandon Gottfried",
   "dependencies": {
