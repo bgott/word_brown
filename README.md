@@ -16,5 +16,5 @@ This webpage was built to satisfy the coding challenge phase of my interview pro
 <img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
 
 ## Netlify Link
-
 Open me in Chrome :)
+<a href="https://wordandbrowncodingchallenge.netlify.com/">
