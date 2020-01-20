@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import LogoSVG from "../assets/images/logo-white.svg"
+import PropTypes from "prop-types";
+import React from "react";
+import LogoSVG from "../assets/images/logo-white.svg";
 
 const Header = ({ siteTitle }) => (
   <header

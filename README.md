@@ -12,11 +12,11 @@ This webpage was built to satisfy the coding challenge phase of my interview pro
 
 ## Challenge Description
 
-    **Code this webpage**
+    *Code this webpage*
 
     We aren't expecting any interactivity. You may apply a color palette of your choice.
 
-    <img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
+<img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
 
 
 ## Notes
