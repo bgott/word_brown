@@ -13,7 +13,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import SearchIcon from '@material-ui/icons/Search';
-import IconButton from '@material-ui/core/IconButton';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
@@ -84,8 +83,6 @@ const EmployeeDatatable = () => (
                                 <TableCell align="left">
                                     <FormControl variant="outlined">
                                         <Select
-                                            labelId="demo-simple-select-filled-label"
-                                            id="demo-simple-select-filled"
                                             value={row.type}
                                             className="type-select"
                                         >

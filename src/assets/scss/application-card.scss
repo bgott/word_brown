@@ -1,7 +1,75 @@
 .application-card {
     margin: 0em 0em 4em 0em;
+    .application-heaer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom:0.75em;
+
+        .header-title {
+            display: flex;
+            flex-direction: row;
+
+            h4, .chip {
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-right: 0.75em;
+            }
+        }
+        .header-actions {
+            .MuiFormControl-root {
+                width:150px;
+                .MuiInputBase-root {
+                    font-size: 95%;
+                }
+                .MuiOutlinedInput-input {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
 }
 
 .app-card {
+    .card-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:1em;
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            padding-top:0.75em;
+        }
+        .header-right {
+            text-align: center;
+            .paper {
+                background-color: rebeccapurple;
+                color: white;
+                height:60px;
+                width:75px;
+                text-align: center;
+                .days-left-data {
+                    font-size:42px;
+                    margin-top: 12px;
+                }
+                .days-left-label {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .card-body {
+        .button-container {
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            .MuiButtonBase-root {
+                background-color: rebeccapurple;
+                color: white;
+            }
+        }
+    }
     height: 800px;
 }

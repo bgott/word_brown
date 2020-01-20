@@ -10,7 +10,7 @@ import EmailIcon from '@material-ui/icons/Email';
 const ContactCard = () => (
     <>
         <div className="contact-section">
-            <h3>Group Information</h3>
+            <h4>Group Information</h4>
             <Card elevation="4" className="card">
                 <div className="row">
                     <Grid container spacing="3" direction="row" justify="space-evenly" alignItems="center">
@@ -20,12 +20,8 @@ const ContactCard = () => (
                                     <UserIcon style={{fontSize:42}}/>
                                 </div>
                                 <div className="data">
-                                    <div className="contact-field-title">
-                                        Contact Person
-                                    </div>
-                                    <div className="contact-field-value">
-                                        Dinesh Chugtai
-                                    </div>
+                                    <div className="contact-field-title">Contact Person</div>
+                                    <div className="contact-field-value">Dinesh Chugtai</div>
                                 </div>
                             </div>
                         </Grid>
@@ -36,12 +32,8 @@ const ContactCard = () => (
                                     <PhoneIcon style={{fontSize:35}}/>
                                 </div>
                                 <div className="data">
-                                    <div className="contact-field-title">
-                                        Phone
-                                    </div>
-                                    <div className="contact-field-value">
-                                        (213)555-1145
-                                    </div>
+                                    <div className="contact-field-title">Phone</div>
+                                    <div className="contact-field-value">(213)555-1145</div>
                                 </div>
                             </div>
                         </Grid>
@@ -51,12 +43,8 @@ const ContactCard = () => (
                                     <EmailIcon style={{fontSize:30}}/>
                                 </div>
                                 <div className="data">
-                                    <div className="contact-field-title">
-                                        Email
-                                    </div>
-                                    <div className="contact-field-value">
-                                        DChugtai@piedpiper.com
-                                    </div>
+                                    <div className="contact-field-title">Email</div>
+                                    <div className="contact-field-value">DChugtai@piedpiper.com</div>
                                 </div>
                             </div>
                         </Grid>
@@ -67,12 +55,8 @@ const ContactCard = () => (
                                     <PinIcon style={{fontSize:35}}/>
                                 </div>
                                 <div className="data">
-                                    <div className="contact-field-title">
-                                        Zip Code
-                                    </div>
-                                    <div className="contact-field-value">
-                                        92612
-                                    </div>
+                                    <div className="contact-field-title">Zip Code</div>
+                                    <div className="contact-field-value">92612</div>
                                 </div>
                             </div>
                         </Grid>
@@ -82,12 +66,8 @@ const ContactCard = () => (
                 <div className="row">
                     <Grid container spacing="3" direction="row" justify="flex-start" alignItems="center">
                         <Grid item className="tax-section">
-                            <div className="tax-id-title">
-                                Tax ID:
-                            </div>
-                            <div className="tax-id-data">
-                                20-5889409
-                            </div>
+                            <div className="tax-id-title">Tax ID:</div>
+                            <div className="tax-id-data">20-5889409</div>
                         </Grid>
                     </Grid>
                 </div>
