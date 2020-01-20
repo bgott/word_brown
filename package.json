@@ -1,5 +1,5 @@
 {
-  "name": "W and B Coding Challenge",
+  "name": "gatsby-starter-default",
   "private": true,
   "description": "My submission for the coding challenge phase of my interview with Word and Brown",
   "version": "0.1.0",
@@ -41,6 +41,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/bgott/word_brown",
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
