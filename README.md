@@ -17,4 +17,4 @@ This webpage was built to satisfy the coding challenge phase of my interview pro
 
 ## Netlify Link
 Open me in Chrome :)
-<a href="https://wordandbrowncodingchallenge.netlify.com/">
+(Word & Brown Coding Challenge Link)[https://wordandbrowncodingchallenge.netlify.com/]
