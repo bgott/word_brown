@@ -93,13 +93,14 @@
                     margin-left: 2.2em;
                     height: calc(95% * (0.166) * 3 + 1em);
                     background-color: #397D74;
+                    opacity: 100% !important;
                 }
                 .progress-stepper-light {
-                    opacity: 30%;
+                    opacity: 30% !important;
                     height: 45%;
                 }
                 .progress-stepper-dark {
-                    opacity: 100%;
+                    opacity: 100% !important;
                 }
             }
             .stepper-data {
