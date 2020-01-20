@@ -29,12 +29,14 @@ const useColorlibStepIconStyles = makeStyles({
     backgroundColor: 'white',
     zIndex: 1,
     color: 'rebeccapurple',
-    width: 28,
-    height: 28,
+    width: 20,
+    height: 20,
     display: 'flex',
     borderRadius: '50%',
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft:4,
+    marginRight:4,
   },
   active: {
     backgroundColor: 'rebeccapurple',
@@ -62,12 +64,12 @@ function ColorlibStepIcon(props) {
   const { active, completed } = props;
 
   const icons = {
-    1: <CheckIcon fontSize="small"/>,
+    1: <CheckIcon style={{fontSize:22}}/>,
     2: <CheckIcon fontSize="small"/>,
     3: <CheckIcon fontSize="small"/>,
     4: "ER",
-    5: <RadioButtonUncheckedIcon />,
-    6: <RadioButtonUncheckedIcon />,
+    5: <RadioButtonUncheckedIcon style={{fontSize:30}}/>,
+    6: <RadioButtonUncheckedIcon style={{fontSize:30}}/>,
   };
 
   return (
