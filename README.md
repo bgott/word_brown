@@ -14,3 +14,7 @@ This webpage was built to satisfy the coding challenge phase of my interview pro
 <strong>Code the following webpage. We aren't expecting any interactivity. You may apply a color palette of your choice.</strong>
 
 <img alt="webpage-screenshot" src="./src/assets/images/image005.png" style="max-width:70%;" />
+
+## Netlify Link
+
+Open me in Chrome :)
