@@ -4,10 +4,10 @@
   </a>
 </p>
 <h1 align="center">
-  Word & Brown Coding Challenge
+  Coding Challenge
 </h1>
 
-This webpage was built to satisfy the coding challenge phase of my interview process with Word & Brown. The challenge requires no user interactivity.
+This webpage was built to satisfy the coding challenge phase of my interview process with Word & Brown.
 
 ## Challenge Description
 
