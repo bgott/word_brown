@@ -65,11 +65,65 @@
             width: 85%;
             margin-left: auto;
             margin-right: auto;
+            margin-top: 0.5em;
+            margin-bottom: 2em;
             .MuiButtonBase-root {
                 background-color: rebeccapurple;
                 color: white;
             }
         }
+
+        .app-status-container {
+            display: inline-flex;
+            flex-direction: row;
+            .MuiStepper-root {
+                padding-top:0em;
+                .MuiStep-root {
+                    z-index: 1;
+                }
+            }
+            .progress-bar {
+                z-index: 0;
+                margin-top: 1em;
+                display:flex;
+                flex-direction: column;
+                .progress-stepper {
+                    float: left;
+                    width: 4px;
+                    margin-left: 2.2em;
+                    height: calc(95% * (0.166) * 3 + 1em);
+
+                    background-color: rebeccapurple;
+                }
+                .progress-stepper-light {
+                    opacity: 30%;
+                    height: 45%;
+                }
+                .progress-stepper-dark {
+                    opacity: 100%;
+                }
+            }
+            .stepper-data {
+                margin-left: -40px;
+            }
+            .step-label {
+                color: purple;
+                margin-left:1.5em;
+                margin-bottom: 0.5em;
+                margin-top: 1.0em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-weight:400;
+            }
+            .step-content {
+                margin-left: 1.5em;
+                font-weight:400;
+            }
+            .step-divider {
+                margin-left: 1.5em;
+                margin-top: 1.0em;
+            }
+        }
     }
-    height: 800px;
 }
