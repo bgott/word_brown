@@ -45,7 +45,7 @@
         .header-right {
             text-align: center;
             .paper {
-                background-color: rebeccapurple;
+                background-color: #397D74;
                 color: white;
                 height:60px;
                 width:75px;
@@ -68,7 +68,7 @@
             margin-top: 0.5em;
             margin-bottom: 2em;
             .MuiButtonBase-root {
-                background-color: rebeccapurple;
+                background-color: #397D74;
                 color: white;
             }
         }
@@ -92,7 +92,7 @@
                     width: 4px;
                     margin-left: 2.2em;
                     height: calc(95% * (0.166) * 3 + 1em);
-                    background-color: rebeccapurple;
+                    background-color: #397D74;
                 }
                 .progress-stepper-light {
                     opacity: 30%;
@@ -106,14 +106,14 @@
                 margin-left: -40px;
             }
             .step-label {
-                color: purple;
+                color: #397D74;
                 margin-left:1.5em;
                 margin-bottom: 0.5em;
                 margin-top: 1.0em;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                font-weight:400;
+                font-weight:500;
             }
             .step-content {
                 margin-left: 1.5em;

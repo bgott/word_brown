@@ -28,7 +28,7 @@ const useColorlibStepIconStyles = makeStyles({
   root: {
     backgroundColor: 'white',
     zIndex: 1,
-    color: 'rebeccapurple',
+    color: '#397D74',
     width: 20,
     height: 20,
     display: 'flex',
@@ -39,7 +39,7 @@ const useColorlibStepIconStyles = makeStyles({
     marginRight:4,
   },
   active: {
-    backgroundColor: 'rebeccapurple',
+    backgroundColor: '#397D74',
     color: 'white',
     fontSize:'18px',
     fontWeight:'500',
@@ -50,7 +50,7 @@ const useColorlibStepIconStyles = makeStyles({
     marginRight:-5,
   },
   completed: {
-      backgroundColor: 'rebeccapurple',
+      backgroundColor: '#397D74',
       color: 'white',
       width:28,
       height:28,

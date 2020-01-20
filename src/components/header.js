@@ -6,7 +6,7 @@ import LogoSVG from "../assets/images/logo-white.svg"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#397D74`,
       marginBottom: `1.45rem`,
     }}
   >
