@@ -33,7 +33,7 @@ const ContactCard = () => (
                                 </div>
                                 <div className="data">
                                     <div className="contact-field-title">Phone</div>
-                                    <div className="contact-field-value">(213)555-1145</div>
+                                    <div className="contact-field-value">(213) 555-1145</div>
                                 </div>
                             </div>
                         </Grid>
