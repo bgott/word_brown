@@ -39,8 +39,7 @@
             }
         }
     }
-}
-
-.card {
-    //height: 200px;
+    @media screen and (min-width: 1131px) and (max-width: 1239px) {
+        font-size:87%;
+    }
 }

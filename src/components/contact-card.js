@@ -17,7 +17,7 @@ const ContactCard = () => (
                         <Grid item>
                             <div className="contact-field">
                                 <div className="icon">
-                                    <UserIcon style={{fontSize:42}}/>
+                                    <UserIcon style={{fontSize:34}}/>
                                 </div>
                                 <div className="data">
                                     <div className="contact-field-title">Contact Person</div>
@@ -29,7 +29,7 @@ const ContactCard = () => (
                         <Grid item>
                             <div className="contact-field">
                                 <div className="icon">
-                                    <PhoneIcon style={{fontSize:35}}/>
+                                    <PhoneIcon style={{fontSize:30}}/>
                                 </div>
                                 <div className="data">
                                     <div className="contact-field-title">Phone</div>
@@ -40,7 +40,7 @@ const ContactCard = () => (
                         <Grid item>
                             <div className="contact-field">
                                 <div className="icon">
-                                    <EmailIcon style={{fontSize:30}}/>
+                                    <EmailIcon style={{fontSize:24}}/>
                                 </div>
                                 <div className="data">
                                     <div className="contact-field-title">Email</div>
@@ -52,7 +52,7 @@ const ContactCard = () => (
                         <Grid item>
                             <div className="contact-field">
                                 <div className="icon">
-                                    <PinIcon style={{fontSize:35}}/>
+                                    <PinIcon style={{fontSize:30}}/>
                                 </div>
                                 <div className="data">
                                     <div className="contact-field-title">Zip Code</div>
