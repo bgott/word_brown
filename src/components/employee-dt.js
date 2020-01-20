@@ -5,7 +5,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import TablePagination from '@material-ui/core/TablePagination';
 import Paper from '@material-ui/core/Paper';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
@@ -17,6 +16,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Button from '@material-ui/core/Button';
 import AddIcon from '@material-ui/icons/Add';
 import FilterListIcon from '@material-ui/icons/FilterList';
+import Divider from '@material-ui/core/Divider';
 
 function createData(name, ssn, status, type) {
   return { name, ssn, status, type };
@@ -43,6 +43,37 @@ const search_input_props = {
         </InputAdornment>
     ),
 };
+
+const CustomTablePagination = () => (
+    <>
+        <div className="custom-table-pagination">
+            <div className="showing-entries">
+                Showing 1–10 of 60 entries
+                <Divider orientation="vertical" />
+                Show
+                <FormControl variant="outlined">
+                    <Select value={10}>
+                        <MenuItem value={10}>10</MenuItem>
+                        <MenuItem value={25}>25</MenuItem>
+                        <MenuItem value={"All"}>All</MenuItem>
+                    </Select>
+                </FormControl>
+                entries
+            </div>
+            <div className="page-selection">
+                <Button className="ul">Previous</Button>
+                <Button variant="outlined">1</Button>
+                <Button className="ul">2</Button>
+                <Button>...</Button>
+                <Button>5</Button>
+                <Button>6</Button>
+                <Button className="ul">Next</Button>
+            </div>
+        </div>
+    </>
+)
+
+
 
 const EmployeeDatatable = () => (
 
@@ -95,14 +126,7 @@ const EmployeeDatatable = () => (
                   </TableBody>
                 </Table>
             </TableContainer>
-            <TablePagination
-                rowsPerPageOptions={[5, 10, 25]}
-                component="div"
-                count="60"
-                rowsPerPage="10"
-                page="0"
-                nextIconButtonText="Next"
-            />
+            <CustomTablePagination />
         </div>
     </>
 )

@@ -54,4 +54,48 @@
             font-size: 95%;
         }
     }
+    .custom-table-pagination {
+        width:99%;
+        font-family: 'Roboto';
+        margin-top: 1.25em;
+        margin-left: 0.5em;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .showing-entries {
+            display:flex;
+            flex-direction: row;
+            height:1.5em;
+            .MuiDivider-vertical {
+                margin-left:0.5em;
+                margin-right:0.5em;
+                width:1px;
+                background-color: rgba(0,0,0,0.8);
+            }
+            .MuiFormControl-root {
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+                .MuiInputBase-root {
+                    margin-top:-8px;
+                    height:40px;
+                    width:70px;
+                }
+            }
+        }
+        .page-selection {
+            display:flex;
+            flex-direction: row;
+            margin-top: -5px;
+            .ul {
+                text-decoration: underline;
+            }
+            .MuiButton-root {
+                min-width: 45px;
+            }
+            .MuiButtonBase-root {
+                font-size: 0.9em;
+                font-weight:400;
+            }
+        }
+    }
 }
