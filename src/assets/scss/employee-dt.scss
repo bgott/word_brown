@@ -57,6 +57,7 @@
     .custom-table-pagination {
         width:99%;
         font-family: 'Roboto';
+        font-size: 0.9em;
         margin-top: 1.25em;
         margin-left: 0.5em;
         display: inline-flex;
@@ -88,13 +89,20 @@
             margin-top: -5px;
             .ul {
                 text-decoration: underline;
+                padding-right:2px !important;
             }
             .MuiButton-root {
-                min-width: 45px;
+                min-width: 35px !important;
             }
             .MuiButtonBase-root {
-                font-size: 0.9em;
+                font-size: 0.85em;
                 font-weight:400;
+            }
+            .MuiButton-text {
+                padding: 6px 3px !important;
+            }
+            .MuiButton-outlined {
+                padding: 5px 3px !important;
             }
         }
     }
